@@ -1,0 +1,205 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ivory: #f7f2e8;
+  --color-cream: #eee5d5;
+  --color-sand: #ddcfb8;
+  --color-ink: #1f1a14;
+  --color-ink-soft: #2b251e;
+  --color-muted: #706457;
+  --color-terra: #a94f2e;
+  --color-terra-dark: #7b341c;
+  --color-forest: #2f3e33;
+  --color-forest-soft: #405445;
+  --color-ochre: #c79a58;
+  --color-line: #d8cbb6;
+  --animate-marquee: marquee 34s linear infinite;
+  --animate-marquee-slow: marquee 58s linear infinite;
+  --animate-spin-slow: spin 24s linear infinite;
+  --animate-float: float 7s ease-in-out infinite;
+}
+
+@theme inline {
+  --font-sans: var(--font-manrope);
+  --font-display: var(--font-cormorant);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  * {
+    border-color: var(--color-line);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background: var(--color-ivory);
+    color: var(--color-ink);
+    font-family: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+    font-feature-settings: "ss01", "cv11";
+    overflow-x: clip;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-cormorant), Georgia, serif;
+    font-weight: 500;
+  }
+
+  ::selection {
+    background: var(--color-terra);
+    color: var(--color-ivory);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-terra);
+    outline-offset: 4px;
+  }
+
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  img {
+    user-select: none;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-ivory);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: color-mix(in srgb, var(--color-sand) 80%, var(--color-terra));
+    border: 3px solid var(--color-ivory);
+    border-radius: 999px;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-[1480px] px-5 sm:px-8 lg:px-12;
+  }
+
+  .eyebrow {
+    @apply text-[10px] font-semibold uppercase tracking-[0.28em] sm:text-[11px];
+  }
+
+  .btn {
+    @apply inline-flex h-12 items-center justify-center gap-2.5 rounded-full px-6 text-[11px] font-semibold uppercase tracking-[0.16em] transition-all duration-300 sm:h-[52px] sm:px-7;
+  }
+
+  .btn-dark {
+    @apply btn bg-ink text-ivory hover:bg-terra;
+  }
+
+  .btn-light {
+    @apply btn bg-ivory text-ink hover:bg-cream;
+  }
+
+  .btn-outline {
+    @apply btn border border-ink/25 text-ink hover:border-ink hover:bg-ink hover:text-ivory;
+  }
+
+  .btn-terra {
+    @apply btn bg-terra text-ivory hover:bg-terra-dark;
+  }
+
+  .field {
+    @apply w-full border border-line bg-transparent px-4 py-3.5 text-sm text-ink outline-none transition-colors placeholder:text-muted/55 focus:border-terra;
+  }
+
+  .field-label {
+    @apply mb-2 block text-[10px] font-semibold uppercase tracking-[0.2em] text-muted;
+  }
+
+  .link-underline {
+    @apply relative inline-flex items-center gap-2 after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-right after:scale-x-100 after:bg-current after:transition-transform after:duration-300 hover:after:origin-left hover:after:scale-x-0;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .grain {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    pointer-events: none;
+    opacity: 0.035;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.8'/%3E%3C/svg%3E");
+  }
+
+  .vertical-text {
+    writing-mode: vertical-rl;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-marquee,
+  .animate-marquee-slow,
+  .animate-spin-slow,
+  .animate-float {
+    animation: none !important;
+  }
+}
