@@ -15,7 +15,7 @@ const sections: LegalSection[] = [
   {
     title: "Éditeur du site",
     paragraphs: [
-      "Le site vakoka-art-malagasy.vercel.app est édité par Art-Malagasy — Maison d'art malgache, boutique en ligne spécialisée dans l’artisanat malgache.",
+      "Le site art-malagasy-mg.vercel.app est édité par Art-Malagasy — Maison d'art malgache, boutique en ligne spécialisée dans l’artisanat malgache.",
       `Siège : ${siteConfig.address}.`,
       `Contact : ${siteConfig.email} — ${siteConfig.phone}.`,
       "La direction de la publication est assurée par la maison Art-Malagasy. Les informations d’immatriculation et de fiscalité peuvent être communiquées sur demande écrite à l’adresse e-mail ci-dessus.",

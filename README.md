@@ -80,7 +80,7 @@ npx vercel --prod
 Variable d’environnement recommandée :
 
 ```bash
-NEXT_PUBLIC_SITE_URL=https://vakoka-art-malagasy.vercel.app
+NEXT_PUBLIC_SITE_URL=https://art-malagasy-mg.vercel.app
 ```
 
 Sans cette variable, `src/lib/site.ts` utilise l’URL de production par défaut. Pensez à mettre à jour cette URL et le domaine dans Vercel après le premier déploiement.

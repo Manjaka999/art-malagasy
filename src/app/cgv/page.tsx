@@ -16,7 +16,7 @@ const sections: LegalSection[] = [
   {
     title: "Objet",
     paragraphs: [
-      "Les présentes conditions générales de vente encadrent les commandes passées auprès d’Art-Malagasy — Maison d'art malgache via le site vakoka-art-malagasy.vercel.app.",
+      "Les présentes conditions générales de vente encadrent les commandes passées auprès d’Art-Malagasy — Maison d'art malgache via le site art-malagasy-mg.vercel.app.",
       "Toute commande implique l’acceptation sans réserve des présentes conditions. Elles peuvent être mises à jour à tout moment ; la version applicable est celle en vigueur au moment de la demande de commande.",
     ],
   },

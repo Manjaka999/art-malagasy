@@ -4,7 +4,7 @@ export const siteConfig = {
   tagline: "L'âme de Madagascar, façonnée à la main.",
   url:
     process.env.NEXT_PUBLIC_SITE_URL ??
-    "https://vakoka-art-malagasy.vercel.app",
+    "https://art-malagasy-mg.vercel.app",
   description:
     "Art-Malagasy réunit des sculptures, lambas, sacs en raffia et céramiques façonnés à la main par des artisans malgaches. Des pièces uniques, traçables et pensées pour traverser le temps.",
   email: "bonjour@art-malagasy.mg",
