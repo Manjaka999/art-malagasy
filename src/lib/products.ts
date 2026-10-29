@@ -44,13 +44,13 @@ export const categories: Category[] = [
     slug: "textile",
     name: "Textile",
     description: "Lambas de soie, cotons teintés et motifs hérités.",
-    image: "/images/collection-textile.jpg",
+    image: "/images/lamba-textile.jpg",
   },
   {
     slug: "vannerie",
     name: "Vannerie",
-    description: "Raffia, jacinthe et gestes de tressage transmis.",
-    image: "/images/collection-vannerie.jpg",
+    description: "Sacs, paniers et gestes de tressage en raffia.",
+    image: "/images/sac-raffia-collection.jpg",
   },
   {
     slug: "ceramique",
@@ -73,6 +73,72 @@ export const categories: Category[] = [
 ];
 
 export const products: Product[] = [
+  {
+    slug: "cabas-raffia-vatovavy",
+    name: "Cabas Raffia Vatovavy",
+    category: "vannerie",
+    categoryLabel: "Vannerie",
+    price: 165,
+    image: "/images/sac-raffia-collection.jpg",
+    alt: "Cabas et sacs en raffia naturel tressés à la main, aux tons clairs",
+    shortDescription:
+      "Un grand cabas souple en raffia tressé, pensé pour les jours qui prennent leur temps.",
+    description:
+      "Tressé en fines lanières de raffia naturel, ce cabas associe une structure souple à des anses confortables. Sa contenance généreuse accueille un ordinateur, des textiles ou les courses du marché. Les finitions sont réalisées à la main, sans teinture, pour laisser vivre la matière.",
+    story:
+      "Dans la région de Vatovavy, le raffia est récolté puis séché avant d’être fendu et tressé. Fanja Andriamihaja et son collectif travaillent en petites séries, au rythme des saisons et de la lumière nécessaire au séchage des fibres.",
+    artisan: "Fanja Andriamihaja",
+    region: "Vatovavy",
+    material: "Raffia naturel tressé",
+    dimensions: "42 × 34 × 16 cm",
+    care: "Dépoussiérer avec une brosse douce. Éviter l’humidité prolongée et le contact direct avec l’eau.",
+    tag: "Nouveau",
+    featured: true,
+  },
+  {
+    slug: "lamba-mena-ceremonie",
+    name: "Lamba Mena Cérémonie",
+    category: "textile",
+    categoryLabel: "Textile",
+    price: 420,
+    image: "/images/lamba-mena.jpg",
+    alt: "Lamba mena en soie rouge profond, drapé avec des plis souples",
+    shortDescription:
+      "Un lamba mena de cérémonie, rouge profond, tissé et teint à la main dans les hauts plateaux.",
+    description:
+      "Ce lamba mena déploie une couleur rouge profonde et une main souple qui se patine avec le temps. Le tissage laisse apparaître de légères variations de fil, signature d’un travail entièrement manuel. Il se porte comme une pièce d’apparat, se drape sur un lit ou se suspend comme un pan de couleur.",
+    story:
+      "Le lamba mena accompagne les grands moments de la vie malgache. Voahangy Rasoanaivo le tisse sur un métier traditionnel puis le teint par bains successifs, en laissant la matière révéler ses nuances au fil des lavages.",
+    artisan: "Voahangy Rasoanaivo",
+    region: "Vakinankaratra",
+    material: "Soie sauvage, teinture naturelle",
+    dimensions: "190 × 70 cm",
+    care: "Lavage à la main à froid, sans essorage. Sécher à plat à l’ombre. Repasser à basse température sur l’envers.",
+    tag: "Pièce signature",
+    featured: true,
+  },
+  {
+    slug: "sac-raffia-manakara",
+    name: "Sac Raffia Manakara",
+    category: "vannerie",
+    categoryLabel: "Vannerie",
+    price: 145,
+    image: "/images/sac-raffia-main.jpg",
+    alt: "Sac en raffia tressé tenu à la main, format compact",
+    shortDescription:
+      "Un sac compact en raffia tressé, à porter à la main ou à l’épaule.",
+    description:
+      "Ce sac en raffia joue sur un format juste et une texture vivante. Son tressage serré lui donne de la tenue, tandis que les anses souples permettent de le porter à la main ou à l’épaule. Chaque pièce présente de subtiles variations de ton et de relief.",
+    story:
+      "Le collectif de Fanja travaille le raffia depuis la récolte jusqu’à la finition. Les sacs sont tressés en petites séries, puis vérifiés un à un pour ajuster les anses et consolider les points de tension.",
+    artisan: "Fanja Andriamihaja",
+    region: "Vatovavy",
+    material: "Raffia naturel tressé",
+    dimensions: "28 × 24 × 10 cm",
+    care: "Brosser à sec avec une brosse douce. Ne pas immerger. Conserver à l’abri de l’humidité.",
+    tag: "Nouveau",
+    featured: true,
+  },
   {
     slug: "masque-vohitra",
     name: "Masque Vohitra",
@@ -247,8 +313,8 @@ export const products: Product[] = [
     featured: true,
   },
   {
-    slug: "statuettes-vakoka",
-    name: "Statuettes Vakoka",
+    slug: "statuettes-vohitra",
+    name: "Statuettes Vohitra",
     category: "sculpture",
     categoryLabel: "Sculpture",
     price: 130,
@@ -259,7 +325,7 @@ export const products: Product[] = [
     description:
       "Ces trois statuettes sont sculptées dans une seule pièce de bois puis peintes aux pigments naturels. Leurs silhouettes allongées et leurs visages minimalistes leur donnent une présence à la fois douce et espiègle. À disposer ensemble ou à disperser dans la maison.",
     story:
-      "Inspirées des figurines offertes lors des naissances, les statuettes Vakoka sont pensées comme des objets de transmission. Hery les sculpte par séries de trois, chaque couleur correspondant à une intention : terre, eau, lumière.",
+      "Inspirées des figurines offertes lors des naissances, les statuettes Vohitra sont pensées comme des objets de transmission. Hery les sculpte par séries de trois, chaque couleur correspondant à une intention : terre, eau, lumière.",
     artisan: "Hery Rakotondrabe",
     region: "Analamanga",
     material: "Bois sculpté, pigments naturels",

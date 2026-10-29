@@ -70,26 +70,29 @@ export function SiteHeader() {
             : "border-b border-transparent bg-ivory",
         )}
       >
-        <div className="container-x flex h-[74px] items-center justify-between gap-6">
+        <div className="container-x flex h-[74px] items-center justify-between gap-4">
           <Link
             href="/"
-            aria-label="Vakoka, retour à l’accueil"
-            className="group flex shrink-0 items-center gap-3"
+            aria-label="Art-Malagasy, retour à l’accueil"
+            className="group flex min-w-0 shrink-0 items-center gap-2 sm:gap-2.5"
           >
-            <span className="grid size-9 place-items-center rounded-full border border-ink/25 font-display text-xl leading-none transition-colors duration-300 group-hover:border-terra group-hover:bg-terra group-hover:text-ivory">
-              V
+            <span className="grid size-9 shrink-0 place-items-center rounded-full border border-ink/25 font-display text-[13px] font-semibold leading-none tracking-[0.02em] transition-colors duration-300 group-hover:border-terra group-hover:bg-terra group-hover:text-ivory">
+              AM
             </span>
-            <span className="flex flex-col">
-              <span className="font-display text-[25px] uppercase leading-none tracking-[0.13em]">
-                Vakoka
+            <span className="hidden flex-col min-[360px]:flex">
+              <span className="font-display text-[18px] uppercase leading-none tracking-[0.07em] sm:text-[24px]">
+                Art-Malagasy
               </span>
-              <span className="mt-1 text-[7px] font-semibold uppercase tracking-[0.34em] text-muted">
-                Art Malagasy
+              <span className="mt-1 hidden text-[7px] font-semibold uppercase tracking-[0.26em] text-muted sm:block">
+                Maison d’art malgache
               </span>
             </span>
           </Link>
 
-          <nav className="hidden items-center gap-7 lg:flex" aria-label="Navigation principale">
+          <nav
+            className="hidden items-center gap-5 xl:flex 2xl:gap-7"
+            aria-label="Navigation principale"
+          >
             {navigation.map((item) => {
               const active = pathname.startsWith(item.href);
               return (
@@ -113,7 +116,7 @@ export function SiteHeader() {
             })}
           </nav>
 
-          <div className="flex items-center gap-2 sm:gap-3">
+          <div className="flex items-center gap-1.5 sm:gap-3">
             <button
               type="button"
               onClick={() => setSearchOpen(true)}
@@ -130,7 +133,7 @@ export function SiteHeader() {
             <button
               type="button"
               onClick={() => setSearchOpen(true)}
-              className="grid size-10 place-items-center text-ink md:hidden"
+              className="grid size-9 place-items-center text-ink sm:hidden"
               aria-label="Rechercher une pièce"
             >
               <Search size={18} strokeWidth={1.6} />
@@ -139,7 +142,7 @@ export function SiteHeader() {
             <button
               type="button"
               onClick={openCart}
-              className="group flex h-10 items-center gap-2 rounded-full border border-ink/20 pl-3.5 pr-1.5 transition-colors hover:border-ink hover:bg-ink hover:text-ivory"
+              className="group flex h-9 items-center gap-1.5 rounded-full border border-ink/20 pl-2 pr-1 transition-colors hover:border-ink hover:bg-ink hover:text-ivory sm:h-10 sm:gap-2 sm:pl-3.5 sm:pr-1.5"
               aria-label={`Ouvrir le panier, ${hydrated ? count : 0} article${
                 hydrated && count > 1 ? "s" : ""
               }`}
@@ -153,7 +156,7 @@ export function SiteHeader() {
                 initial={{ scale: 0.75, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ type: "spring", stiffness: 420, damping: 24 }}
-                className="grid size-7 place-items-center rounded-full bg-ink text-[9px] font-semibold text-ivory transition-colors group-hover:bg-ivory group-hover:text-ink"
+                className="grid size-6 place-items-center rounded-full bg-ink text-[9px] font-semibold text-ivory transition-colors group-hover:bg-ivory group-hover:text-ink sm:size-7"
               >
                 {hydrated ? count : 0}
               </motion.span>
@@ -162,7 +165,7 @@ export function SiteHeader() {
             <button
               type="button"
               onClick={() => setMenuOpen(true)}
-              className="grid size-10 place-items-center text-ink lg:hidden"
+              className="grid size-9 place-items-center text-ink sm:size-10 xl:hidden"
               aria-label="Ouvrir le menu"
             >
               <Menu size={22} strokeWidth={1.5} />
@@ -176,7 +179,7 @@ export function SiteHeader() {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            className="fixed inset-0 z-[90] flex flex-col bg-ink text-ivory lg:hidden"
+            className="fixed inset-0 z-[90] flex flex-col bg-ink text-ivory xl:hidden"
             initial={{ clipPath: "inset(0 0 100% 0)" }}
             animate={{ clipPath: "inset(0 0 0% 0)" }}
             exit={{ clipPath: "inset(0 0 100% 0)" }}
@@ -186,13 +189,13 @@ export function SiteHeader() {
               <Link
                 href="/"
                 onClick={() => setMenuOpen(false)}
-                className="flex items-center gap-3"
+                className="flex min-w-0 items-center gap-2.5"
               >
-                <span className="grid size-9 place-items-center rounded-full border border-ivory/30 font-display text-xl">
-                  V
+                <span className="grid size-9 shrink-0 place-items-center rounded-full border border-ivory/30 font-display text-[13px] font-semibold tracking-[0.02em]">
+                  AM
                 </span>
-                <span className="font-display text-[25px] uppercase tracking-[0.13em]">
-                  Vakoka
+                <span className="min-w-0 font-display text-[22px] uppercase leading-none tracking-[0.06em] sm:text-[25px]">
+                  Art-Malagasy
                 </span>
               </Link>
               <button
@@ -250,7 +253,7 @@ export function SiteHeader() {
                 transition={{ delay: 0.5, duration: 0.5 }}
                 className="mt-10 border-t border-ivory/15 pt-6"
               >
-                <p className="eyebrow text-ivory/45">Maison Vakoka</p>
+                <p className="eyebrow text-ivory/45">Maison Art-Malagasy</p>
                 <a
                   href={`mailto:${siteConfig.email}`}
                   className="mt-3 inline-block font-display text-2xl"

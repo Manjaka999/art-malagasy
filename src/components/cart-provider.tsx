@@ -42,7 +42,7 @@ type CartContextValue = {
 };
 
 const CartContext = createContext<CartContextValue | null>(null);
-const STORAGE_KEY = "vakoka-cart-v1";
+const STORAGE_KEY = "art-malagasy-cart-v1";
 const EMPTY_CART: CartLine[] = [];
 
 let cachedCart: CartLine[] = EMPTY_CART;

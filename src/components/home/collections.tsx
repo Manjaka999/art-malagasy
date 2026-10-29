@@ -31,7 +31,7 @@ export function CollectionsSection() {
                 <p className="eyebrow text-muted">Nos collections</p>
               </div>
               <h2 className="mt-5 max-w-2xl font-display text-[42px] leading-[0.98] sm:text-6xl lg:text-7xl">
-                Quatre matières,
+                Cinq matières,
                 <br />
                 <span className="italic text-terra">mille histoires.</span>
               </h2>

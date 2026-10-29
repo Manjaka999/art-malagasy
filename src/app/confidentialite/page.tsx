@@ -5,7 +5,7 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Politique de confidentialité",
   description:
-    "Quelles données Vakoka collecte, pourquoi, combien de temps et comment exercer vos droits.",
+    "Quelles données Art-Malagasy collecte, pourquoi, combien de temps et comment exercer vos droits.",
   alternates: {
     canonical: "/confidentialite",
   },
@@ -15,7 +15,7 @@ const sections: LegalSection[] = [
   {
     title: "Responsable du traitement",
     paragraphs: [
-      `Le responsable du traitement des données est Vakoka — Art Malagasy, ${siteConfig.address}.`,
+      `Le responsable du traitement des données est Art-Malagasy — Maison d'art malgache, ${siteConfig.address}.`,
       `Pour toute question relative à vos données personnelles : ${siteConfig.email}.`,
     ],
   },
@@ -87,7 +87,7 @@ export default function ConfidentialitePage() {
       eyebrow="Vos données"
       title="Confidentialité"
       intro="Nous collectons le strict nécessaire, ne vendons aucune donnée et vous laissons la main sur votre panier comme sur vos informations."
-      updated="27 octobre 2026"
+      updated="29 octobre 2026"
       sections={sections}
     />
   );

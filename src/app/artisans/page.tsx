@@ -9,7 +9,7 @@ import { artisans } from "@/lib/artisans";
 export const metadata: Metadata = {
   title: "Les artisans",
   description:
-    "Sculpteurs, tisseuses, vannières, céramistes et peintres : rencontrez les artisans malgaches qui façonnent les pièces Vakoka.",
+    "Sculpteurs, tisseuses, vannières, céramistes et peintres : rencontrez les artisans malgaches qui façonnent les pièces Art-Malagasy.",
   alternates: {
     canonical: "/artisans",
   },
@@ -33,7 +33,7 @@ export default function ArtisansPage() {
             <span className="italic text-terra">des territoires.</span>
           </>
         }
-        description="Derrière Vakoka, il n’y a pas une usine mais des ateliers, des familles et des gestes transmis. Voici quelques-unes des personnes avec qui nous construisons la maison, pièce après pièce."
+        description="Derrière Art-Malagasy, il n’y a pas une usine mais des ateliers, des familles et des gestes transmis. Voici quelques-unes des personnes avec qui nous construisons la maison, pièce après pièce."
         image="/images/artisan-weaving.jpg"
         imageAlt="Artisane malgache tissant à la main"
         caption="Vakinankaratra · Atelier de tissage"

@@ -102,7 +102,7 @@ export function ContactForm() {
           <option value="">Choisir un sujet</option>
           <option value="commande">Une question sur une commande</option>
           <option value="sur-mesure">Une commande sur mesure</option>
-          <option value="artisan">Travailler avec Vakoka</option>
+          <option value="artisan">Travailler avec Art-Malagasy</option>
           <option value="presse">Presse & collaborations</option>
           <option value="autre">Autre demande</option>
         </select>

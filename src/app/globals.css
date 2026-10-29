@@ -116,24 +116,28 @@
     @apply text-[10px] font-semibold uppercase tracking-[0.28em] sm:text-[11px];
   }
 
-  .btn {
+  .btn,
+  .btn-dark,
+  .btn-light,
+  .btn-outline,
+  .btn-terra {
     @apply inline-flex h-12 items-center justify-center gap-2.5 rounded-full px-6 text-[11px] font-semibold uppercase tracking-[0.16em] transition-all duration-300 sm:h-[52px] sm:px-7;
   }
 
   .btn-dark {
-    @apply btn bg-ink text-ivory hover:bg-terra;
+    @apply bg-ink text-ivory hover:bg-terra;
   }
 
   .btn-light {
-    @apply btn bg-ivory text-ink hover:bg-cream;
+    @apply bg-ivory text-ink hover:bg-cream;
   }
 
   .btn-outline {
-    @apply btn border border-ink/25 text-ink hover:border-ink hover:bg-ink hover:text-ivory;
+    @apply border border-ink/25 text-ink hover:border-ink hover:bg-ink hover:text-ivory;
   }
 
   .btn-terra {
-    @apply btn bg-terra text-ivory hover:bg-terra-dark;
+    @apply bg-terra text-ivory hover:bg-terra-dark;
   }
 
   .field {

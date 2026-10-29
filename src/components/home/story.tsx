@@ -28,8 +28,8 @@ export function StorySection() {
         <Reveal className="relative">
           <div className="relative ml-auto aspect-[4/5] w-[86%] overflow-hidden bg-sand/40">
             <Image
-              src="/images/ambiance.jpg"
-              alt="Artisan façonnant un objet dans son atelier à Madagascar"
+              src="/images/artisan-raffia.jpg"
+              alt="Artisane crochetant du raffia dans son atelier à Madagascar"
               fill
               sizes="(max-width: 1024px) 86vw, 40vw"
               className="object-cover"
@@ -76,8 +76,8 @@ export function StorySection() {
           <Reveal delay={0.14}>
             <div className="mt-7 max-w-xl space-y-4 text-[14px] leading-relaxed text-muted sm:text-[15px]">
               <p>
-                Vakoka est née d’un mot malgache qui signifie « héritage ». Ce
-                que l’on reçoit, mais aussi ce que l’on choisit de transmettre.
+                Art-Malagasy dit simplement ce que nous faisons : l’art malgache,
+                dans ce qu’il a de vivant, de manuel et de profondément ancré.
                 Depuis 2016, nous parcourons les hauts plateaux, la côte est et
                 le sud de Madagascar à la rencontre de celles et ceux qui
                 travaillent la matière.
@@ -122,7 +122,7 @@ export function StorySection() {
               <div>
                 <p className="font-display text-xl italic">Miora & Hery</p>
                 <p className="text-[8px] font-semibold uppercase tracking-[0.18em] text-muted">
-                  Fondateurs de Vakoka
+                  Fondateurs d’Art-Malagasy
                 </p>
               </div>
             </div>

@@ -6,7 +6,7 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Conditions générales de vente",
   description:
-    "Conditions de commande, de paiement, de livraison et de retour des pièces Vakoka.",
+    "Conditions de commande, de paiement, de livraison et de retour des pièces Art-Malagasy.",
   alternates: {
     canonical: "/cgv",
   },
@@ -16,7 +16,7 @@ const sections: LegalSection[] = [
   {
     title: "Objet",
     paragraphs: [
-      "Les présentes conditions générales de vente encadrent les commandes passées auprès de Vakoka — Art Malagasy via le site vakoka-art-malagasy.vercel.app.",
+      "Les présentes conditions générales de vente encadrent les commandes passées auprès d’Art-Malagasy — Maison d'art malgache via le site vakoka-art-malagasy.vercel.app.",
       "Toute commande implique l’acceptation sans réserve des présentes conditions. Elles peuvent être mises à jour à tout moment ; la version applicable est celle en vigueur au moment de la demande de commande.",
     ],
   },
@@ -32,7 +32,7 @@ const sections: LegalSection[] = [
     paragraphs: [
       "Les prix sont indiqués en euros, toutes taxes comprises, hors éventuels droits de douane. Ils ne comprennent pas les frais de livraison, précisés avant validation de la commande.",
       `La livraison standard est facturée ${STANDARD_SHIPPING} € et offerte dès ${FREE_SHIPPING_THRESHOLD} € d’achat. La livraison express est proposée à 29 €.`,
-      "Vakoka se réserve le droit de modifier ses prix à tout moment, sans effet sur les commandes déjà confirmées.",
+      "Art-Malagasy se réserve le droit de modifier ses prix à tout moment, sans effet sur les commandes déjà confirmées.",
     ],
   },
   {
@@ -69,7 +69,7 @@ const sections: LegalSection[] = [
   {
     title: "Responsabilité",
     paragraphs: [
-      "Vakoka ne saurait être responsable des dommages indirects résultant de l’utilisation des pièces ou de l’impossibilité d’accéder au site. Sa responsabilité reste en tout état de cause limitée au montant de la commande concernée.",
+      "Art-Malagasy ne saurait être responsable des dommages indirects résultant de l’utilisation des pièces ou de l’impossibilité d’accéder au site. Sa responsabilité reste en tout état de cause limitée au montant de la commande concernée.",
       "Les pièces doivent être utilisées et entretenues conformément aux indications de leur fiche. Les dommages résultant d’un usage inadapté ne sont pas couverts.",
     ],
   },
@@ -88,7 +88,7 @@ export default function CgvPage() {
       eyebrow="Conditions de vente"
       title="CGV"
       intro="Commande, prix, paiement, livraison et retours : les règles qui encadrent chaque pièce qui quitte l’atelier."
-      updated="27 octobre 2026"
+      updated="29 octobre 2026"
       sections={sections}
     />
   );

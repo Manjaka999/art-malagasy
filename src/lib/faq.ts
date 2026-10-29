@@ -73,7 +73,7 @@ export const faqGroups: FaqGroup[] = [
       {
         question: "Comment garantissez-vous l’authenticité des pièces ?",
         answer:
-          "Chaque pièce est identifiée avec le nom de son artisan, sa région et sa matière. Elle est accompagnée d’un certificat Vakoka signé par l’atelier. Nous travaillons en relation directe avec les artisans, sans intermédiaire, et visitons les ateliers plusieurs fois par an.",
+          "Chaque pièce est identifiée avec le nom de son artisan, sa région et sa matière. Elle est accompagnée d’un certificat Art-Malagasy signé par l’atelier. Nous travaillons en relation directe avec les artisans, sans intermédiaire, et visitons les ateliers plusieurs fois par an.",
       },
       {
         question: "D’où viennent les matières ?",
@@ -127,7 +127,7 @@ export const faqGroups: FaqGroup[] = [
       {
         question: "Puis-je visiter l’atelier ?",
         answer:
-          "L’atelier Vakoka se trouve à Antananarivo et se visite sur rendez-vous. Certains ateliers partenaires peuvent également être visités lors de séjours à Madagascar, selon leur disponibilité. Écrivez-nous au moins deux semaines à l’avance.",
+          "L’atelier Art-Malagasy se trouve à Antananarivo et se visite sur rendez-vous. Certains ateliers partenaires peuvent également être visités lors de séjours à Madagascar, selon leur disponibilité. Écrivez-nous au moins deux semaines à l’avance.",
       },
       {
         question: "Puis-je revendre vos pièces ?",

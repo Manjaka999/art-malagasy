@@ -113,9 +113,9 @@ export function HomeHero() {
             transition={{ duration: 0.7, delay: 0.52, ease: [0.22, 1, 0.36, 1] }}
             className="mt-6 max-w-[470px] text-[14px] leading-relaxed text-muted sm:text-[15px]"
           >
-            Sculptures, lambas, vanneries et céramiques façonnés lentement par
-            des artisans malgaches. Des pièces uniques, choisies pour traverser
-            le temps et raconter leur territoire.
+            Sculptures, lambas, sacs en raffia et céramiques façonnés lentement
+            par des artisans malgaches. Des pièces uniques, choisies pour
+            traverser le temps et raconter leur territoire.
           </motion.p>
 
           <motion.div
@@ -167,8 +167,8 @@ export function HomeHero() {
             className="relative ml-auto aspect-[3/4] w-[88%] overflow-hidden rounded-t-[999px] rounded-b-[8px] bg-cream shadow-[0_30px_80px_-50px_rgba(31,26,20,0.65)]"
           >
             <Image
-              src="/images/hero-mask.jpg"
-              alt="Masque malgache sculpté à la main présenté sur un étal de marché"
+              src="/images/lamba-mena.jpg"
+              alt="Lamba mena malgache en soie rouge profond, drapé dans une lumière naturelle"
               fill
               priority
               sizes="(max-width: 1024px) 80vw, 42vw"
@@ -181,11 +181,11 @@ export function HomeHero() {
                   Pièce du mois
                 </p>
                 <p className="mt-1 font-display text-2xl leading-none sm:text-3xl">
-                  Masque Vohitra
+                  Lamba Mena
                 </p>
               </div>
               <span className="text-[9px] uppercase tracking-[0.14em] text-ivory/60">
-                245 €
+                420 €
               </span>
             </div>
           </motion.div>
@@ -199,15 +199,15 @@ export function HomeHero() {
           >
             <div className="relative aspect-[4/5] overflow-hidden bg-cream">
               <Image
-                src="/images/hero-textile.jpg"
-                alt="Textile malgache aux couleurs chaudes"
+                src="/images/sac-raffia-collection.jpg"
+                alt="Sacs en raffia tressés à la main à Madagascar"
                 fill
                 sizes="220px"
                 className="object-cover"
               />
             </div>
             <p className="px-2 py-2 text-[7px] font-semibold uppercase tracking-[0.14em] text-muted">
-              Textile · Soie sauvage
+              Raffia · Tressage main
             </p>
           </motion.div>
 

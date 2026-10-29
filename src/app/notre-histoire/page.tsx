@@ -8,7 +8,7 @@ import { Reveal } from "@/components/reveal";
 export const metadata: Metadata = {
   title: "Notre histoire",
   description:
-    "Vakoka signifie héritage. Découvrez notre maison, nos engagements et la relation directe que nous construisons avec les artisans malgaches depuis 2016.",
+    "Art-Malagasy, l’art malgache façonné à la main. Découvrez notre maison, nos engagements et la relation directe que nous construisons avec les artisans depuis 2016.",
   alternates: {
     canonical: "/notre-histoire",
   },
@@ -46,7 +46,7 @@ const timeline = [
   {
     year: "2019",
     title: "L’atelier d’Antananarivo",
-    text: "Vakoka ouvre un atelier-boutique à Antanimena. Un lieu pour rencontrer les artisans, comprendre les gestes et préparer les commandes.",
+    text: "Art-Malagasy ouvre un atelier-boutique à Antanimena. Un lieu pour rencontrer les artisans, comprendre les gestes et préparer les commandes.",
   },
   {
     year: "2022",
@@ -56,7 +56,7 @@ const timeline = [
   {
     year: "2026",
     title: "Une maison, 120 mains",
-    text: "Vakoka réunit aujourd’hui 120 artisans dans 12 régions. La collection Terre & fibres poursuit ce travail de rencontre, de patience et de transmission.",
+    text: "Art-Malagasy réunit aujourd’hui 120 artisans dans 12 régions. La collection Terre & fibres poursuit ce travail de rencontre, de patience et de transmission.",
   },
 ];
 
@@ -72,10 +72,10 @@ export default function NotreHistoirePage() {
             <span className="italic text-terra">Nous transmettons des gestes.</span>
           </>
         }
-        description="Vakoka est un mot malgache qui signifie héritage. Ce que l’on reçoit, mais aussi ce que l’on choisit de transmettre. Depuis 2016, nous construisons une maison d’art autour de cette idée simple."
+        description="Notre nom dit simplement ce que nous faisons : l’art malgache, dans ce qu’il a de vivant et de manuel. Depuis 2016, nous construisons une maison autour de cette évidence."
         image="/images/atelier.jpg"
         imageAlt="Rencontre dans un atelier d’art à Madagascar"
-        caption="Antananarivo · Atelier Vakoka"
+        caption="Antananarivo · Atelier Art-Malagasy"
       />
 
       <section className="py-20 sm:py-24 lg:py-32">
@@ -87,9 +87,9 @@ export default function NotreHistoirePage() {
                 <p className="eyebrow text-muted">Le nom</p>
               </div>
               <h2 className="mt-5 font-display text-[42px] leading-[0.98] sm:text-6xl">
-                Vakoka,
+                Art-Malagasy,
                 <br />
-                <span className="italic text-terra">l’héritage vivant.</span>
+                <span className="italic text-terra">l’art, simplement.</span>
               </h2>
             </div>
           </Reveal>
@@ -112,7 +112,7 @@ export default function NotreHistoirePage() {
                   continuait d’utiliser : chacun avait son histoire.
                 </p>
                 <p>
-                  En créant Vakoka, nous avons voulu prolonger ce geste. Pas
+                  En créant Art-Malagasy, nous avons voulu prolonger ce geste. Pas
                   pour muséifier l’artisanat, mais pour lui donner une place
                   vivante dans les intérieurs d’aujourd’hui. Choisir une pièce
                   malgache, c’est accepter qu’elle ne soit pas parfaitement

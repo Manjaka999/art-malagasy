@@ -19,17 +19,17 @@ export function SiteFooter() {
             <Link
               href="/"
               className="group inline-flex items-center gap-3"
-              aria-label="Vakoka, retour à l’accueil"
+              aria-label="Art-Malagasy, retour à l’accueil"
             >
-              <span className="grid size-10 place-items-center rounded-full border border-ivory/25 font-display text-2xl transition-colors group-hover:border-ochre group-hover:text-ochre">
-                V
+              <span className="grid size-10 place-items-center rounded-full border border-ivory/25 font-display text-[14px] font-semibold tracking-[0.02em] transition-colors group-hover:border-ochre group-hover:text-ochre">
+                AM
               </span>
               <span className="flex flex-col">
-                <span className="font-display text-[28px] uppercase leading-none tracking-[0.13em]">
-                  Vakoka
+                <span className="font-display text-[26px] uppercase leading-none tracking-[0.07em] sm:text-[28px]">
+                  Art-Malagasy
                 </span>
-                <span className="mt-1 text-[7px] font-semibold uppercase tracking-[0.34em] text-ivory/45">
-                  Art Malagasy
+                <span className="mt-1 text-[7px] font-semibold uppercase tracking-[0.28em] text-ivory/45">
+                  Maison d’art malgache
                 </span>
               </span>
             </Link>
@@ -146,8 +146,8 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-10 overflow-hidden" aria-hidden="true">
-          <p className="whitespace-nowrap font-display text-[18.5vw] uppercase leading-[0.62] tracking-[0.02em] text-ivory/[0.055]">
-            Vakoka
+          <p className="whitespace-nowrap font-display text-[14vw] uppercase leading-[0.72] tracking-[-0.01em] text-ivory/[0.055] lg:text-[10vw]">
+            Art-Malagasy
           </p>
         </div>
       </div>

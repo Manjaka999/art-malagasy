@@ -26,7 +26,7 @@ const testimonials = [
       "J’ai offert les statuettes à ma mère. Elle a été touchée par le certificat signé par l’artisan et par la petite carte manuscrite. C’est rare, cette attention au détail.",
     name: "Aïcha B.",
     location: "Genève, Suisse",
-    piece: "Statuettes Vakoka",
+    piece: "Statuettes Vohitra",
     initials: "AB",
   },
 ];

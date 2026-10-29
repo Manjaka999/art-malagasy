@@ -10,7 +10,7 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Questions fréquentes",
   description:
-    "Commandes, livraison, retours, authenticité et entretien des pièces : toutes les réponses de l’atelier Vakoka.",
+    "Commandes, livraison, retours, authenticité et entretien des pièces : toutes les réponses de l’atelier Art-Malagasy.",
   alternates: {
     canonical: "/faq",
   },

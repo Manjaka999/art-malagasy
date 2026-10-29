@@ -20,10 +20,10 @@ export function NewsletterSection() {
         aria-hidden="true"
       />
       <p
-        className="pointer-events-none absolute -bottom-10 left-0 select-none font-display text-[20vw] leading-none text-ivory/[0.035]"
+        className="pointer-events-none absolute -bottom-10 left-0 select-none whitespace-nowrap font-display text-[10vw] leading-none tracking-[-0.02em] text-ivory/[0.035] lg:text-[8vw]"
         aria-hidden="true"
       >
-        Vakoka
+        Art-Malagasy
       </p>
 
       <div className="container-x relative grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-20">
@@ -31,7 +31,7 @@ export function NewsletterSection() {
           <div>
             <div className="flex items-center gap-3">
               <span className="h-px w-7 bg-ochre" />
-              <p className="eyebrow text-ivory/50">La lettre Vakoka</p>
+              <p className="eyebrow text-ivory/50">La lettre Art-Malagasy</p>
             </div>
             <h2 className="mt-5 max-w-xl font-display text-[42px] leading-[0.98] sm:text-6xl">
               Les nouvelles pièces,

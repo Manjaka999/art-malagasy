@@ -80,7 +80,7 @@ export function Checkout() {
   const submit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    const reference = `VK-${Math.floor(100000 + Math.random() * 900000)}`;
+    const reference = `AM-${Math.floor(100000 + Math.random() * 900000)}`;
 
     setOrder({
       reference,

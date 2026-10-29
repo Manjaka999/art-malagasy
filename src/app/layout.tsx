@@ -26,8 +26,8 @@ const sans = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Vakoka — Art Malagasy",
-    template: "%s — Vakoka",
+    default: "Art-Malagasy — L'art malgache, façonné à la main",
+    template: "%s — Art-Malagasy",
   },
   description: siteConfig.description,
   keywords: [
@@ -40,27 +40,27 @@ export const metadata: Metadata = {
     "raffia",
     "artisanat éthique",
   ],
-  authors: [{ name: "Vakoka" }],
-  creator: "Vakoka",
+  authors: [{ name: "Art-Malagasy" }],
+  creator: "Art-Malagasy",
   openGraph: {
     type: "website",
     locale: "fr_FR",
     url: siteConfig.url,
-    siteName: "Vakoka — Art Malagasy",
-    title: "Vakoka — L'âme de Madagascar, façonnée à la main",
+    siteName: "Art-Malagasy",
+    title: "Art-Malagasy — L'âme de Madagascar, façonnée à la main",
     description: siteConfig.description,
     images: [
       {
         url: "/images/og.jpg",
         width: 1200,
         height: 630,
-        alt: "Vakoka, art malgache contemporain",
+        alt: "Art-Malagasy, art malgache contemporain",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vakoka — L'âme de Madagascar, façonnée à la main",
+    title: "Art-Malagasy — L'âme de Madagascar, façonnée à la main",
     description: siteConfig.description,
     images: ["/images/og.jpg"],
   },

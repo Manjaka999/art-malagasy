@@ -9,7 +9,7 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Une question sur une pièce, une commande sur mesure ou un projet de collaboration ? Écrivez à l’atelier Vakoka à Antananarivo.",
+    "Une question sur une pièce, une commande sur mesure ou un projet de collaboration ? Écrivez à l’atelier Art-Malagasy à Antananarivo.",
   alternates: {
     canonical: "/contact",
   },
@@ -60,7 +60,7 @@ export default function ContactPage() {
         }
         description="Une question sur une commande, une envie de sur-mesure, un projet de collaboration ou simplement l’envie de nous connaître : l’atelier vous répond avec attention."
         image="/images/atelier.jpg"
-        imageAlt="Atelier Vakoka à Antananarivo"
+        imageAlt="Atelier Art-Malagasy à Antananarivo"
         caption="Antanimena · Antananarivo"
       />
 

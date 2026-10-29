@@ -1,13 +1,13 @@
 export const siteConfig = {
-  name: "Vakoka",
-  legalName: "Vakoka — Art Malagasy",
+  name: "Art-Malagasy",
+  legalName: "Art-Malagasy — Maison d'art malgache",
   tagline: "L'âme de Madagascar, façonnée à la main.",
   url:
     process.env.NEXT_PUBLIC_SITE_URL ??
     "https://vakoka-art-malagasy.vercel.app",
   description:
-    "Vakoka réunit des sculptures, textiles, vanneries et céramiques façonnés à la main par des artisans malgaches. Des pièces uniques, traçables et pensées pour traverser le temps.",
-  email: "bonjour@vakoka-art.mg",
+    "Art-Malagasy réunit des sculptures, lambas, sacs en raffia et céramiques façonnés à la main par des artisans malgaches. Des pièces uniques, traçables et pensées pour traverser le temps.",
+  email: "bonjour@art-malagasy.mg",
   phone: "+261 34 12 345 67",
   phoneHref: "+261341234567",
   address: "Lot II A 45, Antanimena, Antananarivo 101, Madagascar",

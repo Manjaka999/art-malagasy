@@ -1,6 +1,6 @@
-# Vakoka — Art Malagasy
+# Art-Malagasy — Maison d'art malgache
 
-Boutique en ligne et maison d’art dédiée à l’artisanat malgache. Le site présente douze pièces, cinq ateliers partenaires, l’histoire de la maison et un parcours de commande sans paiement en ligne.
+Boutique en ligne et maison d’art dédiée à l’artisanat malgache. Le site présente quinze pièces, cinq ateliers partenaires, l’histoire de la maison et un parcours de commande sans paiement en ligne.
 
 **Devise :** « L’âme de Madagascar, façonnée à la main. »
 
@@ -87,4 +87,10 @@ Sans cette variable, `src/lib/site.ts` utilise l’URL de production par défaut
 
 ## Crédits
 
-Photographies d’illustration : [Pexels](https://www.pexels.com/) (licence libre). Les visuels sont utilisés à titre éditorial et ne représentent pas nécessairement les pièces exactes présentées.
+Photographies d’illustration : [Pexels](https://www.pexels.com/) (licence Pexels). Les visuels sont utilisés à titre éditorial et ne représentent pas nécessairement les pièces exactes présentées.
+
+Visuels Wikimedia Commons :
+
+- [Lamba mena](https://commons.wikimedia.org/wiki/File:Lamba_mena.jpg), Cia 401, CC0.
+- [Textile Lamba, Madagascar](https://commons.wikimedia.org/wiki/File:Textile_Lamba,_Madagascar,_collection_priv%C3%A9e_de_Ariane_Mawaffo.jpg), Rhodapenmarck, CC0.
+- [Artisant travaillant le rafia à Madagascar](https://commons.wikimedia.org/wiki/File:Artisant_travaillant_le_rafia_%C3%A0_Madagascar.jpg), Dalbergiaada, CC BY-SA 4.0.

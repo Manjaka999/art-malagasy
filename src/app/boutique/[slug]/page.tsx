@@ -48,7 +48,7 @@ export async function generateMetadata({
       canonical: `/boutique/${product.slug}`,
     },
     openGraph: {
-      title: `${product.name} — Vakoka`,
+      title: `${product.name} — ${siteConfig.name}`,
       description: product.shortDescription,
       images: [{ url: product.image }],
     },
@@ -136,7 +136,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 </span>
               )}
               <span className="absolute bottom-5 right-5 bg-ink/70 px-3 py-2 text-[8px] font-semibold uppercase tracking-[0.16em] text-ivory backdrop-blur">
-                Réf. VK-{product.slug.slice(0, 6).toUpperCase()}
+                Réf. AM-{product.slug.slice(0, 6).toUpperCase()}
               </span>
             </div>
 
