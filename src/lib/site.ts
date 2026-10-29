@@ -8,8 +8,8 @@ export const siteConfig = {
   description:
     "Art-Malagasy réunit des sculptures, lambas, sacs en raffia et céramiques façonnés à la main par des artisans malgaches. Des pièces uniques, traçables et pensées pour traverser le temps.",
   email: "bonjour@art-malagasy.mg",
-  phone: "+261 34 12 345 67",
-  phoneHref: "+261341234567",
+  phone: "+261 34 94 947 48",
+  phoneHref: "+261349494748",
   address: "Lot II A 45, Antanimena, Antananarivo 101, Madagascar",
   hours: "Lun — Ven · 9h à 17h (GMT+3)",
   socials: {
