@@ -4,7 +4,8 @@ import { useState } from "react";
 import { Minus, Plus, ShoppingBag, Truck } from "lucide-react";
 import { useCart } from "@/components/cart-provider";
 import type { Product } from "@/lib/products";
-import { formatPrice } from "@/lib/utils";
+import { Price } from "@/components/currency-provider";
+import { FREE_SHIPPING_THRESHOLD } from "@/lib/products";
 
 export function AddToCart({ product }: { product: Product }) {
   const { addItem } = useCart();
@@ -46,13 +47,13 @@ export function AddToCart({ product }: { product: Product }) {
           className="btn-dark flex-1"
         >
           <ShoppingBag size={15} strokeWidth={1.7} />
-          Ajouter au panier — {formatPrice(product.price * quantity)}
+          Ajouter au panier — <Price value={product.price * quantity} />
         </button>
       </div>
 
       <p className="mt-4 flex items-center gap-2 text-[10px] uppercase tracking-[0.13em] text-muted">
         <Truck size={14} strokeWidth={1.5} className="text-terra" />
-        Livraison offerte dès 180 € · Expédition sous 48h
+        Livraison offerte dès <Price value={FREE_SHIPPING_THRESHOLD} /> · Expédition sous 48h
       </p>
     </div>
   );

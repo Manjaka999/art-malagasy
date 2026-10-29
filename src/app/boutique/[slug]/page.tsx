@@ -15,13 +15,14 @@ import { AddToCart } from "@/components/add-to-cart";
 import { ProductCard } from "@/components/product-card";
 import { Reveal } from "@/components/reveal";
 import {
+  FREE_SHIPPING_THRESHOLD,
   getProduct,
   getRelatedProducts,
   products,
   type Product,
 } from "@/lib/products";
 import { siteConfig } from "@/lib/site";
-import { formatPrice } from "@/lib/utils";
+import { Price } from "@/components/currency-provider";
 
 type ProductPageProps = {
   params: Promise<{ slug: string }>;
@@ -179,7 +180,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
               <p className="mt-5 text-[15px] leading-relaxed text-muted">
                 {product.shortDescription}
               </p>
-              <p className="mt-5 font-display text-3xl">{formatPrice(product.price)}</p>
+              <p className="mt-5 font-display text-3xl"><Price value={product.price} /></p>
             </Reveal>
 
             <Reveal delay={0.08}>
@@ -260,7 +261,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   <div className="space-y-2 pb-5 text-xs leading-relaxed text-muted">
                     <p>
                       Préparation sous 48h ouvrées. Livraison standard en 5 à 8
-                      jours ouvrés (offerte dès 180 €), express en 2 à 4 jours.
+                      jours ouvrés (offerte dès <Price value={FREE_SHIPPING_THRESHOLD} />), express en 2 à 4 jours.
                     </p>
                     <p>
                       Retours acceptés sous 14 jours, hors pièces personnalisées.

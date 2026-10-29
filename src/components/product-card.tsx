@@ -5,7 +5,8 @@ import Link from "next/link";
 import { Plus } from "lucide-react";
 import { useCart } from "@/components/cart-provider";
 import type { Product } from "@/lib/products";
-import { cn, formatPrice } from "@/lib/utils";
+import { cn } from "@/lib/utils";
+import { Price } from "@/components/currency-provider";
 
 type ProductCardProps = {
   product: Product;
@@ -69,7 +70,7 @@ export function ProductCard({
           <p className="mt-1 text-[10px] text-muted">{product.artisan}</p>
         </div>
         <p className="shrink-0 pt-3 text-[12px] font-semibold tabular-nums">
-          {formatPrice(product.price)}
+          <Price value={product.price} />
         </p>
       </div>
     </article>

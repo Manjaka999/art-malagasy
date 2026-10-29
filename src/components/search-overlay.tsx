@@ -7,7 +7,8 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowUpRight, Search, X } from "lucide-react";
 import { categories, products } from "@/lib/products";
-import { categoryHref, formatPrice } from "@/lib/utils";
+import { categoryHref } from "@/lib/utils";
+import { Price } from "@/components/currency-provider";
 
 type SearchOverlayProps = {
   open: boolean;
@@ -193,7 +194,7 @@ export function SearchOverlay({ open, onClose }: SearchOverlayProps) {
                             </p>
                           </div>
                           <span className="text-sm font-medium">
-                            {formatPrice(product.price)}
+                            <Price value={product.price} />
                           </span>
                           <ArrowUpRight
                             size={18}

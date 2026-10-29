@@ -10,6 +10,7 @@ import {
   useTransform,
 } from "framer-motion";
 import { ArrowDown, ArrowUpRight } from "lucide-react";
+import { Price } from "@/components/currency-provider";
 
 const stats = [
   { value: "120", label: "artisans partenaires" },
@@ -185,7 +186,7 @@ export function HomeHero() {
                 </p>
               </div>
               <span className="text-[9px] uppercase tracking-[0.14em] text-ivory/60">
-                420 €
+                <Price value={420} />
               </span>
             </div>
           </motion.div>

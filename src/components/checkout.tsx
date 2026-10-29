@@ -17,7 +17,8 @@ import {
 import { useCart, type CartLine } from "@/components/cart-provider";
 import { FREE_SHIPPING_THRESHOLD, STANDARD_SHIPPING } from "@/lib/products";
 import { siteConfig } from "@/lib/site";
-import { cn, formatPrice } from "@/lib/utils";
+import { cn } from "@/lib/utils";
+import { Price } from "@/components/currency-provider";
 
 const EXPRESS_SHIPPING = 29;
 
@@ -138,7 +139,7 @@ export function Checkout() {
                     Total
                   </p>
                   <p className="mt-1 font-display text-2xl">
-                    {formatPrice(order.total)}
+                    <Price value={order.total} />
                   </p>
                 </div>
               </div>
@@ -163,7 +164,7 @@ export function Checkout() {
                         {item.categoryLabel} · Quantité {item.quantity}
                       </p>
                     </div>
-                    <p className="text-xs">{formatPrice(item.price * item.quantity)}</p>
+                    <p className="text-xs"><Price value={item.price * item.quantity} /></p>
                   </div>
                 ))}
               </div>
@@ -444,7 +445,7 @@ export function Checkout() {
                       <span>
                         {subtotal >= FREE_SHIPPING_THRESHOLD
                           ? "Offerte"
-                          : formatPrice(STANDARD_SHIPPING)}
+                          : <Price value={STANDARD_SHIPPING} />}
                       </span>
                     </span>
                     <span className="mt-1 block text-[10px] leading-relaxed text-muted">
@@ -471,7 +472,7 @@ export function Checkout() {
                   <span>
                     <span className="flex items-center justify-between gap-3 text-xs font-semibold">
                       Express
-                      <span>{formatPrice(EXPRESS_SHIPPING)}</span>
+                      <span><Price value={EXPRESS_SHIPPING} /></span>
                     </span>
                     <span className="mt-1 block text-[10px] leading-relaxed text-muted">
                       2 à 4 jours ouvrés · suivie
@@ -481,7 +482,7 @@ export function Checkout() {
               </div>
               <p className="mt-3 flex items-center gap-2 text-[10px] leading-relaxed text-muted">
                 <Truck size={13} className="shrink-0 text-terra" />
-                Livraison offerte dès {formatPrice(FREE_SHIPPING_THRESHOLD)} avec
+                Livraison offerte dès <Price value={FREE_SHIPPING_THRESHOLD} /> avec
                 la méthode standard. Pour Madagascar, un devis est établi après
                 commande.
               </p>
@@ -583,7 +584,7 @@ export function Checkout() {
                       </p>
                     </div>
                     <p className="text-[11px]">
-                      {formatPrice(item.price * item.quantity)}
+                      <Price value={item.price * item.quantity} />
                     </p>
                   </div>
                 ))}
@@ -594,7 +595,7 @@ export function Checkout() {
                   <p className="text-[10px] leading-relaxed text-muted">
                     Plus que{" "}
                     <span className="font-semibold text-ink">
-                      {formatPrice(FREE_SHIPPING_THRESHOLD - subtotal)}
+                      <Price value={FREE_SHIPPING_THRESHOLD - subtotal} />
                     </span>{" "}
                     pour bénéficier de la livraison offerte.
                   </p>
@@ -612,19 +613,19 @@ export function Checkout() {
               <div className="space-y-2 border-t border-line px-5 py-4 text-xs">
                 <div className="flex justify-between text-muted">
                   <span>Sous-total</span>
-                  <span className="text-ink">{formatPrice(subtotal)}</span>
+                  <span className="text-ink"><Price value={subtotal} /></span>
                 </div>
                 <div className="flex justify-between text-muted">
                   <span>Livraison</span>
                   <span className="text-ink">
-                    {shippingCost === 0 ? "Offerte" : formatPrice(shippingCost)}
+                    {shippingCost === 0 ? "Offerte" : <Price value={shippingCost} />}
                   </span>
                 </div>
                 <div className="flex items-baseline justify-between border-t border-line pt-3">
                   <span className="text-[10px] font-semibold uppercase tracking-[0.16em]">
                     Total
                   </span>
-                  <span className="font-display text-3xl">{formatPrice(total)}</span>
+                  <span className="font-display text-3xl"><Price value={total} /></span>
                 </div>
                 <p className="text-[9px] text-muted">TVA incluse.</p>
               </div>

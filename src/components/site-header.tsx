@@ -15,6 +15,8 @@ import { useCart } from "@/components/cart-provider";
 import { SearchOverlay } from "@/components/search-overlay";
 import { navigation, siteConfig } from "@/lib/site";
 import { cn } from "@/lib/utils";
+import { CurrencySwitcher, Price } from "@/components/currency-provider";
+import { FREE_SHIPPING_THRESHOLD } from "@/lib/products";
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -56,9 +58,13 @@ export function SiteHeader() {
         <div className="container-x flex h-9 items-center justify-between text-[8px] font-medium uppercase tracking-[0.2em] sm:text-[9px]">
           <span className="hidden sm:block">Fait main à Madagascar</span>
           <span className="truncate">
-            Livraison offerte dès 180 € · Retours sous 14 jours
+            Livraison offerte dès <Price value={FREE_SHIPPING_THRESHOLD} />
+            <span className="hidden md:inline"> · Retours sous 14 jours</span>
           </span>
-          <span className="hidden sm:block">Misaotra · Depuis 2016</span>
+          <div className="flex items-center gap-4">
+            <span className="hidden lg:block">Misaotra · Depuis 2016</span>
+            <CurrencySwitcher />
+          </div>
         </div>
       </div>
 

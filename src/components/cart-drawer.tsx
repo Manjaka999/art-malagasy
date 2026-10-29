@@ -16,7 +16,7 @@ import {
   X,
 } from "lucide-react";
 import { useCart } from "@/components/cart-provider";
-import { formatPrice } from "@/lib/utils";
+import { Price } from "@/components/currency-provider";
 
 export function CartDrawer() {
   const {
@@ -102,7 +102,7 @@ export function CartDrawer() {
                   {remaining > 0 ? (
                     <span>
                       Plus que{" "}
-                      <strong className="font-bold">{formatPrice(remaining)}</strong>{" "}
+                      <strong className="font-bold"><Price value={remaining} /></strong>{" "}
                       pour la livraison offerte
                     </span>
                   ) : (
@@ -222,7 +222,7 @@ export function CartDrawer() {
                               </button>
                             </div>
                             <span className="text-sm font-semibold">
-                              {formatPrice(line.price * line.quantity)}
+                              <Price value={line.price * line.quantity} />
                             </span>
                           </div>
                         </div>
@@ -238,19 +238,19 @@ export function CartDrawer() {
                 <dl className="space-y-2 text-xs">
                   <div className="flex items-center justify-between">
                     <dt className="text-muted">Sous-total</dt>
-                    <dd className="font-medium">{formatPrice(subtotal)}</dd>
+                    <dd className="font-medium"><Price value={subtotal} /></dd>
                   </div>
                   <div className="flex items-center justify-between">
                     <dt className="text-muted">Livraison</dt>
                     <dd className="font-medium">
-                      {shipping === 0 ? "Offerte" : formatPrice(shipping)}
+                      {shipping === 0 ? "Offerte" : <Price value={shipping} />}
                     </dd>
                   </div>
                   <div className="flex items-baseline justify-between border-t border-line pt-3">
                     <dt className="text-[10px] font-semibold uppercase tracking-[0.18em]">
                       Total
                     </dt>
-                    <dd className="font-display text-2xl">{formatPrice(total)}</dd>
+                    <dd className="font-display text-2xl"><Price value={total} /></dd>
                   </div>
                 </dl>
 
